@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+body {
+  font-family: Microsoft YaHei, Arial, sans-serif;
+}
+ul {
+  list-style: none;
+}
+// 左浮动
+.fl {
+  float: left;
+}
+// 右浮动
+.fr {
+  float: right;
+}
+// 清除浮动
+.clearfix {
+  zoom: 1;
+  &:before,
+  &:after {
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    font-size: 0;
+  }
+  &:after {
+    clear: both;
+  }
+}
