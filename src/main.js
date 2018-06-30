@@ -3,6 +3,7 @@
 import Vue from 'vue'
 
 import '@/styles/index.scss' // global css
+import 'babel-polyfill' // 兼容IE9
 
 import App from './App'
 import router from './router'
